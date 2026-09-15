@@ -365,7 +365,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     margin: 5px auto 0;
     background-color: #feac23;
     border: 2px solid #feac23;
-    olor:#3b3b4f;
+    color:#3b3b4f;
     font-size:24px;
 	text-decoration: none;
 	color: #0a0a23;
@@ -465,7 +465,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     margin: 5px auto 0;
     background-color: #feac23;
     border: 2px solid #feac23;
-    olor:#3b3b4f;
+    color:#3b3b4f;
     font-size:24px;
 	text-decoration: none;
 	color: #0a0a23;
@@ -732,6 +732,249 @@ padding-left:20px;
 }
 
 
+
+/* ================= DESKTOP RESPONSIVE FIX ================= */
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #Header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .hero-section {
+        width: 100%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-section {
+        width: 48%;
+        padding-left: 0;
+        margin-top: 100px;
+        box-sizing: border-box;
+    }
+
+    .hero-title {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        margin-top: 40px;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 30px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .hero-image-wrapper {
+        width: 52%;
+        flex: none;
+        margin-top: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 650px;
+        height: 540px;
+        object-fit: cover;
+    }
+
+    #About,
+    #testimonials,
+    #Recommended,
+    #Catalog,
+    #FrequentlyAQ,
+    .learning-footer {
+        width: 100%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #About {
+        margin-top: 100px;
+    }
+
+    .image-section {
+        width: 100%;
+        margin: 40px 0 0;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+
+    .image-section img {
+        margin-top: 0 !important;
+        padding-left: 0 !important;
+        flex-shrink: 0;
+    }
+
+    #Service {
+        width: 100%;
+        height: auto;
+        min-height: 630px;
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: #3b3b4f;
+    }
+
+    .icon-style {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #testimonials {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .testimonials-card {
+        width: 100%;
+        max-width: 1200px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Recommended {
+        height: auto;
+        min-height: 2520px;
+        padding-bottom: 60px;
+    }
+
+    .heading,
+    .heading-1,
+    .paragraph {
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+
+    .Recommended-card {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+    }
+
+    .Recommanded-btn,
+    .testimonial-btn,
+    .FrequentlyAQ-btn,
+    .service-btn {
+        text-align: center;
+    }
+
+    #Catalog {
+        height: auto;
+        min-height: 830px;
+        padding-bottom: 50px;
+    }
+
+    .Catalog-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 310px !important;
+        flex: 0 0 310px;
+        height: 280px;
+        margin: 0 15px 20px !important;
+    }
+
+    .card-4 {
+        margin-top: 0 !important;
+    }
+
+    #FrequentlyAQ {
+        height: auto;
+        min-height: 840px;
+        padding-bottom: 50px;
+    }
+
+    .Question {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .learning-footer {
+        height: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero-section {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+    .hero-img {
+        max-width: 680px;
+        height: 560px;
+    }
+
+    .image-section {
+        gap: 50px;
+    }
+
+    .service {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .testimonials-card,
+    .Recommended-card {
+        max-width: 1200px;
+    }
+}
+/* ================= END DESKTOP RESPONSIVE FIX ================= */
+
 @media (max-width: 767px) {
 
   body {
@@ -883,8 +1126,7 @@ padding-left:20px;
   .Right-text {
     padding: 20px;
   }
-
-  .Right-text h2 {
+.Right-text h2 {
     padding-top: 0;
     font-size: 22px;
   }
@@ -1021,7 +1263,8 @@ padding-left:20px;
   }
 
   .store-button {
-    width: min(255px, 100%);
+    width: 255px;
+     max-width: 100%;
     margin: 8px auto;
   }
 
@@ -1030,59 +1273,6 @@ padding-left:20px;
     padding-left: 0;
     font-size: 14px;
   }
-}
-
-@media (min-width: 1200px) {
-
-    .hero-section {
-        max-width: 1400px;
-        margin: auto;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .hero-title {
-        font-size: 64px;
-    }
-
-    .hero-img {
-        max-width: 650px;
-        height: 540px;
-    }
-
-    #About {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .image-section {
-        margin-left: 80px;
-    }
-
-    .service {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .testimonials-card {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #Recommended {
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .Recommended-card {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 </style>
 </head>
@@ -1790,4 +1980,3 @@ for (i = 0; i < acc.length; i++) {
 </script>
 </body>
 </html>
-
