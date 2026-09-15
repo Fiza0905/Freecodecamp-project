@@ -733,27 +733,47 @@ padding-left:20px;
 
 
 
-/* ================= DESKTOP RESPONSIVE FIX ================= */
+/* =========================================================
+   DESKTOP RESPONSIVE LAYOUT
+   Keeps section backgrounds full width and centers content.
+   Dreamweaver 2019 friendly CSS.
+   ========================================================= */
 * {
     box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
-    body {
-        overflow-x: hidden;
+
+    /* MAIN BOOTSTRAP CONTAINER */
+    .container {
+        width: 92%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
+    /* HEADER */
     #Header {
+        width: 100%;
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .hero-section {
+    .search-container {
         width: 100%;
-        max-width: 1400px;
+        max-width: 500px;
+    }
+
+    /* HERO */
+    .hero-section {
+        width: 92%;
+        max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 40px;
+        padding-left: 30px;
+        padding-right: 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -763,7 +783,6 @@ padding-left:20px;
         width: 48%;
         padding-left: 0;
         margin-top: 100px;
-        box-sizing: border-box;
     }
 
     .hero-title {
@@ -795,35 +814,28 @@ padding-left:20px;
 
     .hero-img {
         width: 100%;
-        max-width: 650px;
+        max-width: 680px;
         height: 540px;
         object-fit: cover;
     }
 
-    #About,
-    #testimonials,
-    #Recommended,
-    #Catalog,
-    #FrequentlyAQ,
-    .learning-footer {
-        width: 100%;
-        max-width: 1400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    /* ABOUT - full background, centered logo row */
     #About {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 100px;
     }
 
     .image-section {
         width: 100%;
-        margin: 40px 0 0;
+        margin: 40px auto 0;
         padding: 0 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 35px;
+        justify-content: space-around;
+        gap: 20px;
         flex-wrap: wrap;
     }
 
@@ -833,6 +845,7 @@ padding-left:20px;
         flex-shrink: 0;
     }
 
+    /* SERVICE */
     #Service {
         width: 100%;
         height: auto;
@@ -846,9 +859,9 @@ padding-left:20px;
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
+        background-color: #3b3b4f;
         padding-left: 40px;
         padding-right: 40px;
-        background-color: #3b3b4f;
     }
 
     .icon-style {
@@ -856,51 +869,59 @@ padding-left:20px;
         padding-right: 0;
     }
 
+    /* TESTIMONIALS - background stays full screen */
     #testimonials {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
         padding-bottom: 50px;
     }
 
     .testimonials-card {
-        width: 100%;
+        width: 90%;
         max-width: 1200px;
         height: 300px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    /* RECOMMENDED - background stays full screen */
     #Recommended {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
-        min-height: 2520px;
+        min-height: 0;
         padding-bottom: 60px;
     }
 
     .heading,
     .heading-1,
     .paragraph {
-        padding-left: 60px;
+        padding-left: 40px;
         padding-right: 40px;
     }
 
     .Recommended-card {
-        width: 100%;
+        width: 90%;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
         height: 70px;
     }
 
-    .Recommanded-btn,
-    .testimonial-btn,
-    .FrequentlyAQ-btn,
-    .service-btn {
-        text-align: center;
-    }
-
+    /* CATALOG - four cards stay centered on desktop */
     #Catalog {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
         min-height: 830px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 
     .Catalog-card {
@@ -914,66 +935,121 @@ padding-left:20px;
         align-items: flex-start;
     }
 
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4 {
+    .Catalog-card > .card-1,
+    .Catalog-card > .card-2,
+    .Catalog-card > .card-3 {
         width: 310px !important;
         flex: 0 0 310px;
         height: 280px;
         margin: 0 15px 20px !important;
     }
 
-    .card-4 {
-        margin-top: 0 !important;
+    .Catalog-card > .card-link {
+        display: block;
+        width: 310px;
+        flex: 0 0 310px;
+        margin: 0 15px 20px;
     }
 
+    .Catalog-card > .card-link .card-4 {
+        width: 310px !important;
+        height: 280px;
+        margin: 0 !important;
+    }
+
+    /* FAQ */
     #FrequentlyAQ {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
-        min-height: 840px;
-        padding-bottom: 50px;
+        min-height: 0;
+        padding-bottom: 60px;
     }
 
     .Question {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
+    /* FOOTER - full width background */
     .learning-footer {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
+    }
+
+    .learning-footer > .container {
+        width: 92%;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-about {
+        padding-left: 20px;
+    }
+
+    .footer-guides li {
+        padding-left: 10px;
+    }
+
+    .footer-bottom {
+        padding-left: 0;
     }
 }
 
-@media (min-width: 1400px) {
+/* LARGE COMPUTER SCREENS */
+@media (min-width: 1600px) {
+
+    .container,
+    .learning-footer > .container {
+        width: 90%;
+        max-width: 1600px;
+    }
+
     .hero-section {
-        padding-left: 60px;
-        padding-right: 60px;
+        width: 90%;
+        max-width: 1700px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-section {
+        width: 47%;
     }
 
     .hero-title {
         font-size: 64px;
     }
 
-    .hero-img {
-        max-width: 680px;
-        height: 560px;
+    .hero-text {
+        font-size: 21px;
     }
 
-    .image-section {
-        gap: 50px;
+    .hero-image-wrapper {
+        width: 53%;
+    }
+
+    .hero-img {
+        max-width: 720px;
+        height: 570px;
     }
 
     .service {
-        padding-left: 60px;
-        padding-right: 60px;
+        max-width: 1600px;
     }
 
     .testimonials-card,
     .Recommended-card {
-        max-width: 1200px;
+        max-width: 1250px;
     }
 }
-/* ================= END DESKTOP RESPONSIVE FIX ================= */
 
 @media (max-width: 767px) {
 
@@ -1264,8 +1340,8 @@ padding-left:20px;
   }
 
   .store-button {
-    width: 255px;
-     max-width: 100%;
+    width:255px;
+    max-width:100%;
     margin: 8px auto;
   }
 
@@ -1359,11 +1435,11 @@ padding-left:20px;
 <div class="col-lg-12">
 <h3 class="alert-heading">More than <strong>100,000</strong> freeCodeCamp graduates work in companies such as</h3>
 <div class="image-section">
-<img src="FCC Capture-1.JPG" alt="Apple logo Label" height="50px">
-<img src="FCC Capture-2.JPG" alt="Google logo Label" height="35px" style="padding-left:80px; margin-top:10px;">
-<img src="FCC Capture-3.JPG" alt="Microsoft logo Label" height="60px" style="padding-left:104px; margin-top:10px;">
-<img src="FCC Capture-4.JPG" alt="Spotify logo Label" height="60px" style="padding-left:104px; margin-top:10px;">
-<img src="FCC Capture-5.JPG" alt="apple logo Label" height="66px" style="padding-left:90px; margin-top:12px;">
+<img src="Apple Label Logo.png" alt="Apple logo Label" height="50px">
+<img src="Goolgle Label Logo.png" alt="Google logo Label" height="35px" style="padding-left:80px; margin-top:10px;">
+<img src="Microsoftlogolabel.png" alt="Microsoft logo Label" height="60px" style="padding-left:104px; margin-top:10px;">
+<img src="SpotifyLogoLabel.png" alt="Spotify logo Label" height="60px" style="padding-left:104px; margin-top:10px;">
+<img src="Amazonlogolabel.png" alt="apple logo Label" height="66px" style="padding-left:90px; margin-top:12px;">
 </div>
 </div>
 </div>
@@ -1408,7 +1484,7 @@ padding-left:20px;
 <a href="https://api.freecodecamp.org/signin" 
    target="_blank" 
    class="service-btn">
-  Start Learning Now (it's free
+  Start Learning Now (it's free)
 </a>
 </div>
 </div>
